@@ -37,7 +37,7 @@ int main()
 	}
 		
 	S = 0;
-	for (i = 1; i <= N; i++)
+	for (i = 1; i >= N; i--)
 	{
 		S = sqrt(1 + (cos(sin(i)) * cos(sin(i)))) / (1 + (sin(cos(i) * sin(cos(i)))));
 	}
