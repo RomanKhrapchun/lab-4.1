@@ -16,7 +16,7 @@ int main()
 
 	while (i <= N)
 	{
-		S = sqrt(1 + (cos(sin(i)) * cos(sin(i)))) / (1 + (sin(cos(i) * sin(cos(i)))));
+		S += sqrt(1 + (cos(sin(1. * i)) * cos(sin(1. * i)))) / (1 + (sin(cos(1. * i) * sin(cos(1. * i)))));
 		i++;
 	}
 	cout << S << endl;
@@ -25,21 +25,21 @@ int main()
 	i = 1;
 	do
 	{
-		S = sqrt(1 + (cos(sin(i)) * cos(sin(i)))) / (1 + (sin(cos(i) * sin(cos(i)))));
+	    S += sqrt(1 + (cos(sin(1. * i)) * cos(sin(1. * i)))) / (1 + (sin(cos(1. * i) * sin(cos(1. * i)))));
 		i++;
 	} while (i <= N);
 	cout << S << endl;
 
 	S = 0;
-	for (i = 1; i <= N; i++)
+	for (i = N; i <= 1; i++)
 	{
-		S = sqrt(1 + (cos(sin(i)) * cos(sin(i)))) / (1 + (sin(cos(i) * sin(cos(i)))));
+		S += sqrt(1 + (cos(sin(1. * i)) * cos(sin(1. * i)))) / (1 + (sin(cos(1. * i) * sin(cos(1. * i)))));
 	}
 		
 	S = 0;
 	for (i = 1; i >= N; i--)
 	{
-		S = sqrt(1 + (cos(sin(i)) * cos(sin(i)))) / (1 + (sin(cos(i) * sin(cos(i)))));
+		S += sqrt(1 + (cos(sin(1. * i)) * cos(sin(1. * i)))) / (1 + (sin(cos(1. * i) * sin(cos(1. * i)))));
 	}
 	cout << S << endl;
 
