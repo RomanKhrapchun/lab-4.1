@@ -35,6 +35,7 @@ int main()
 	{
 		S += sqrt(1 + (cos(sin(1. * i)) * cos(sin(1. * i)))) / (1 + (sin(cos(1. * i) * sin(cos(1. * i)))));
 	}
+	cout << S << endl;
 		
 	S = 0;
 	for (i = 1; i >= N; i--)
